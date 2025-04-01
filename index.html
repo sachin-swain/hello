@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistaaar meta</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;    
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+        }
+        .card{
+            height: 500px;
+            width: 370px;
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+            box-shadow: 10px 10px 6px gray;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+        .card img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        #buttom1{
+            width: 80%;
+            height: 10%;
+            background: #5ed1ff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .leftbox{
+            width: fit-content;
+            display: flex;
+            gap: 15px;
+            height: 100%;
+            align-items: center;
+        }
+        #imagebox{
+            height: 3.5rem;
+            width: 3.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .rightbox{
+
+        }
+        #payment{
+            width: 80%;
+            height: 10%;
+            background: #091164;
+            color: white;
+            border-radius: 10px; 
+            box-shadow: 8px 8px 6px gray;
+        }
+        .cancel a{
+            text-decoration: none;
+            color: rgb(83, 81, 81);
+            font-weight:bold ;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="card">
+        <img src="rasgulla.png" alt="oops...">
+        <div class="textbox">
+            <h2>
+                Rasagolaa Divas
+            </h2>
+    
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, pariatur minus esse tempore rem commodi obcaecati delectus iste nisi impedit?</p>
+        </div>  
+        
+        <div id="buttom1">
+            <div class="leftbox">
+                <div id="imagebox">
+                    <img src="rasgulla.png" alt="">
+                </div>
+                <div id="amttextbox">
+                    <p>Amount</p>
+                    <p>$99.9/Year</p>
+                </div>
+            </div>
+            <div class="rightbox">
+                <a href="">change</a>
+            </div>
+        </div>
+
+        <button id="payment">
+            proceed to payment
+        </button>
+        <div class="cancel">
+            <a href="http://127.0.0.1:5500/recipie_project.html">Cancel payment</a>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
